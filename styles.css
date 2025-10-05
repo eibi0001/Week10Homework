@@ -16,13 +16,14 @@ body {
 }
 
 .vis-container {
-    width: 100%;
+    width: 90%;
     min-height: 400px;
 }
 
 .pure-g {
     margin-bottom: 20px;
 }
+
 
 
 
