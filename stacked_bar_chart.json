@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Any 12-Month Mental Health Disorder by Region and Gender (16-24), 2020-22",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/eibi0001/Week10Homework/main/12-month-mental-disorder-by-region-and-gender.csv"
+  },
+  "layer": [
+    {
+      "selection": {
+        "gender_highlight": {
+          "type": "multi",
+          "fields": ["Gender"],
+          "bind": "legend"
+        }
+      },
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "Region",
+          "type": "nominal",
+          "axis": {"labelAngle": -25}
+        },
+        "y": {
+          "field": "Percent",
+          "type": "quantitative",
+          "title": "Percent of Persons with Any 12-Month Mental Disorder"
+        },
+        "order": {"aggregate": "sum", "field": "Gender"},
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Female", "Male"],
+            "range": ["#675193", "#f1a226"]
+          },
+          "title": "Gender"
+        },
+        "opacity": {
+          "condition": {"selection": "gender_highlight", "value": 1},
+          "value": 0.2
+        },
+        "tooltip": [
+          {"field": "Region", "type": "nominal"},
+          {"field": "Gender", "type": "nominal"},
+          {"field": "Percent", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -7,
+        "fontSize": 12,
+        "fontWeight": "normal",
+        "color": "black"
+      },
+      "encoding": {
+        "x": {"field": "Region", "type": "nominal"},
+        "y": {"field": "Percent_total", "type": "quantitative"},
+        "text": {"field": "annotation", "type": "nominal"}
+      },
+      "transform": [
+        {
+          "aggregate": [
+            {"op": "sum", "field": "Percent", "as": "Percent_total"}
+          ],
+          "groupby": ["Region"]
+        },
+        {
+          "calculate": "'Total: ' + datum.Percent_total + '%'",
+          "as": "annotation"
+        }
+      ]
+    }
+  ],
+  "config": {}
+}

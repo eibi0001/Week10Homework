@@ -1,0 +1,32 @@
+h1 {
+    font-weight: 900;
+}
+
+body {
+    background-color: gray;
+}
+
+.page {
+    width: 850px;
+    background-color: white;
+    margin: auto;
+    padding: 50px;
+    padding-top: 35px;
+}
+
+.vis-container {
+    width: 100%;
+    min-height: 400px;
+}
+
+.description-left {
+    padding-right: 15px;
+}
+
+.description-right {
+    padding-left: 15px;
+}
+
+.pure-g {
+    margin-bottom: 20px;
+}
