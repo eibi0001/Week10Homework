@@ -14,8 +14,11 @@ body {
     padding-top: 35px;
 }
 .pure-u-1-1 {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-left: 25px;
+    padding-right: 25px;
 }
 
 .vis-container {
@@ -26,6 +29,7 @@ body {
 .pure-g {
     margin-bottom: 20px;
 }
+
 
 
 
