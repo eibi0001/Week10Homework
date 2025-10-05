@@ -1,5 +1,4 @@
 h1 {
-    text-align: center;
     font-weight: 900;
 }
 
@@ -14,6 +13,9 @@ body {
     padding: 50px;
     padding-top: 35px;
 }
+.description-left, .description-right {
+    padding-left: 25px;
+}
 
 .vis-container {
     width: 90%;
@@ -23,6 +25,7 @@ body {
 .pure-g {
     margin-bottom: 20px;
 }
+
 
 
 
