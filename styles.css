@@ -7,7 +7,7 @@ body {
 }
 
 .page {
-    width: 850px;
+    width: 800px;
     background-color: white;
     margin: auto;
     padding: 50px;
@@ -16,8 +16,7 @@ body {
 }
 
 .vis-container {
-    width: 80%;
-    min-height: 400px;
+    width: 100%;
 }
 
 .description-left {
@@ -31,4 +30,5 @@ body {
 .pure-g {
     margin-bottom: 20px;
 }
+
 
