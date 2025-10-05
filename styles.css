@@ -13,23 +13,23 @@ body {
     padding: 50px;
     padding-top: 35px;
 }
-.pure-u-1-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 25px;
-    padding-right: 25px;
-}
 
 .vis-container {
     width: 100%;
     min-height: 400px;
 }
 
+.description-left {
+    padding-right: 15px;
+}
+
+.description-right {
+    padding-left: 15px;
+}
+
 .pure-g {
     margin-bottom: 20px;
 }
-
 
 
 
