@@ -13,18 +13,20 @@ body {
     padding: 50px;
     padding-top: 35px;
 }
-.description-left, .description-right {
+.pure-u-1-1 {
+    text-align: center;
     padding-left: 25px;
 }
 
 .vis-container {
-    width: 90%;
+    width: 100%;
     min-height: 400px;
 }
 
 .pure-g {
     margin-bottom: 20px;
 }
+
 
 
 
