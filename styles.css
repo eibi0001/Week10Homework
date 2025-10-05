@@ -11,11 +11,12 @@ body {
     background-color: white;
     margin: auto;
     padding: 50px;
+    padding-left: 20px;
     padding-top: 35px;
 }
 
 .vis-container {
-    width: 100%;
+    width: 80%;
     min-height: 400px;
 }
 
@@ -30,3 +31,4 @@ body {
 .pure-g {
     margin-bottom: 20px;
 }
+
